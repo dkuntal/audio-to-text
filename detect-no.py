@@ -16,10 +16,14 @@ net = tflearn.fully_connected(net, 10, activation='softmax')
 net = tflearn.regression(net, optimizer='adam', learning_rate=learning_rate, loss='categorical_crossentropy')
 
 model = tflearn.DNN(net, tensorboard_verbose=0)
+i = 0
 while 1:
 	model.fit(trainX, trainY, n_epoch=10, validation_set=(testX, testY), show_metric=True,
 		batch_size=64)
 	_y = model.predict(X)
+	i = i+1
+	if training_iters < i+1:
+		break
 model.save('tflearn.lstm.model')
 print(_y)
-print(y)
+print(Y)
