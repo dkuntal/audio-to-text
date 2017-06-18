@@ -4,13 +4,21 @@ No idea. But definitely doing something
 # Requirements
 audio-no.py
 -> tensorflow
+
 -> tflearn
+
 -> numpy
+
 -> scikit-image
+
 -> scikit-learn
+
 -> File: https://github.com/llSourcell/tensorflow_speech_recognition_demo/blob/master/speech_data.py
+
 -> librosa
+
 -> h5py
+
 -> six
 
 # Instructions
